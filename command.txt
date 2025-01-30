@@ -1,0 +1,6 @@
+python train_dreambooth_flux.py \
+    --pretrained_model_name_or_path "black-forest-labs/FLUX.1-dev" \
+    --dataset_name "processed_dataset" \
+    --resolution 512 \
+    --max_train_steps 2 \
+    --instance_prompt "air_quality"
