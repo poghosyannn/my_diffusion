@@ -9,3 +9,5 @@ sentencepiece
 git+https://github.com/huggingface/diffusers
 protobuf
 diffusers
+datasets
+pip install --upgrade pillow
