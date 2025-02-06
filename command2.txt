@@ -1,9 +1,14 @@
 python lora_flux.py \
-    --pretrained_model_name_or_path "black-forest-labs/FLUX.1-schnell" \
+    --pretrained_model_name_or_path "black-forest-labs/FLUX.1-dev" \
     --dataset_name "dataset_lite" \
     --resolution 512 \
-    --max_train_steps 2 \
+    --max_train_steps 10 \
     --instance_prompt "air_quality" \
-    --train_batch_size 1 \
-    --sample_batch_size 1 \
+    --train_batch_size 3 \
+    --sample_batch_size 3 \
     --gradient_checkpointing
+
+
+
+
+black-forest-labs/FLUX.1-schnell
