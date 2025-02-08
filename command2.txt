@@ -2,11 +2,17 @@ python lora_flux.py \
     --pretrained_model_name_or_path "black-forest-labs/FLUX.1-dev" \
     --dataset_name "dataset_lite" \
     --resolution 512 \
-    --max_train_steps 10 \
+    --max_train_steps 5 \
     --instance_prompt "air_quality" \
-    --train_batch_size 3 \
-    --sample_batch_size 3 \
-    --gradient_checkpointing
+    --train_batch_size 8 \
+    --sample_batch_size 8 \
+    --gradient_checkpointing \
+    --report_to "wandb" \
+    --validation_prompt "Severe" \
+    --num_validation_images 3 \
+    --validation_epochs 5 \
+    --num_train_epochs 3
+
 
 
 
